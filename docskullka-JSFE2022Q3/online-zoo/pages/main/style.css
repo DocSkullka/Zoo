@@ -34,6 +34,19 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     background: #000000;
     backdrop-filter: blur(2px);
 }
+main{
+    position: relative;
+}
+.main{
+    position: relative;
+}
+
+@media only screen and (max-width:1000px) {
+    .headconter{
+        min-width: 1000px;
+        width: 100%;
+    }
+}
 a:hover{
     text-decoration: underline #FFFFFF;
 }
@@ -58,6 +71,7 @@ a:hover{
 /*-------------------------HEAD----------------------------*/
 
 
+
 .allHeader{
     display: flex;
     margin: 0 auto;
@@ -65,6 +79,13 @@ a:hover{
     height: 80px;
     /* background: #867d7d; */
     backdrop-filter: blur(2px);
+}
+@media only screen and (max-width:1000px) {
+    .allHeader{
+        width: 1000px;
+        height: 80px;
+       
+    }
 }
 
 .petStory{
@@ -74,6 +95,16 @@ margin-top: 14px;
 width: 82px;
 height: 52px;
 }
+@media only screen and (max-width:1000px) {
+    .petStory{
+        position: relative;
+        margin-left:30px ;
+        margin-top: 14px;
+        width: 82px;
+        height: 52px;
+        }
+}
+
 .imgPet img{
     position: absolute;
    
@@ -106,11 +137,22 @@ line-height: 120%;
 .navigHead{
     margin-top: 29px;
     display: flex;
-    margin-left: 5px;
+    margin-left: 15px;
+}
+@media only screen and (max-width:1000px) {
+    .navigHead{
+        margin-top: 26px;
+    }
 }
 .navigHead li{
     margin-left: 58px;
     list-style: none;
+}
+@media only screen and (max-width:1000px) {
+    .navigHead li{
+        margin-left: 48px;
+       
+    }
 }
 .navigHead li a{
 font-family: 'Roboto';
@@ -136,23 +178,45 @@ color: #FFFFFF;
     margin-top: 29px;
     margin-left: 438px;
 }
+@media only screen and (max-width:1000px) {
+    .designedNav{
+        margin-top: 26px;
+        margin-left: 259px;
+    }
+}
 
 .litOne{
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 background-clip: text;
+text-fill-color: transparent;
 }
+
+/*-----------------media 640 ----------------------------*/
 
 /*---------------------------WATCH--------------------------------*/
 .watch{
     width: 100%;
     min-width: 1600px;
 }
+@media only screen and (max-width:1000px) {
+    .watch{
+        width: 1000px;
+        min-width: auto;
+    }
+}
 .watchContent{
     background: url(/docskullka-JSFE2022Q3/online-zoo/assets/img--main/Giant\ Panda.jpg)no-repeat ;
     background-size: 100%;
     
+}
+@media only screen and (max-width:1000px) {
+    .watchContent{
+        background: url(/docskullka-JSFE2022Q3/online-zoo/assets/img--main/Giant\ Panda\ \(1\).jpg)no-repeat ;
+        background-size: 100%;
+        width: 1000px;
+    }
 }
 
 .wathJob{
@@ -162,8 +226,15 @@ background-clip: text;
     /* background-color: rgb(160, 105, 31); */
     /* z-index: 20; */
     height: 700px;
+   
 }
-
+@media only screen and (max-width:1000px) {
+    .wathJob{
+        overflow: hidden;
+        width: 1000px;
+        height: 504px;
+    }
+}
 .watchText{
     position: absolute;
     right: 219.96px;
@@ -179,7 +250,15 @@ background-clip: text;
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
+@media only screen and (max-width:1000px) {
+    .watchText{
+        font-weight: 700;
+font-size: 85px;
+line-height: 75%;
+width: 400.25px;
+height: 320px;
+    }
+}
 .watchText p{
     color: #FFEE2E;
 }
@@ -195,7 +274,16 @@ border-radius: 50%;
 
 background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
 }
-
+@media only screen and (max-width:1000px) {
+    .circle{
+        position: absolute;
+    width: 367px;
+    height: 367px;
+    right: 178px;
+    top: -14px;
+  
+ 
+    }}
 .watchButton{
     position: absolute;
 width: 298px;
@@ -214,7 +302,24 @@ text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
 }
-
+@media only screen and (max-width:1000px) {
+    .watchButton{
+        right: 137px;
+        bottom: 50px;
+    
+    }
+}
+@media only screen and (max-width:1000px) {
+    .watchText{
+        font-weight: 700;
+font-size: 85px;
+line-height: 75%;
+width: 400.25px;
+height: 320px;
+right: 85px;
+top: 40px;
+    }
+}
  .watchButt button:hover{
     background: #E47209; border-radius: 25px; 
 
@@ -231,7 +336,7 @@ color: #FFFFFF;
 /*------------------------back----------------------------*/
 .main{
     position: relative;
-    min-width: 1600px;
+    
 }
 
 .dedPhoto{
@@ -240,11 +345,31 @@ color: #FFFFFF;
 height: 403px;
 margin-right: 87px;
 }
+@media only screen and (max-width:1000px) {
+    .dedPhoto{
+        margin-left: 30px;
+      
+    margin-right: 31px;
+    }
+}
 .backstage{
     width: 100%;
     min-width: 1600px;
 }
-
+@media only screen and (max-width:1000px) {
+    .dedPhoto img{
+        
+        width: 455px;
+    height: 408px;
+   
+    }
+}
+@media only screen and (max-width:1000px) {
+    .backstage{
+        width: 1000px;
+        min-width: auto;
+    }
+}
 .backsContent{
     position: relative;
     margin: 0 auto;
@@ -252,6 +377,28 @@ margin-right: 87px;
     margin-top: 140px;
     display: flex;
    
+}
+@media only screen and (max-width:1000px) {
+    .backsContent{
+        margin-top: 106px;
+        width: 1000px;
+       
+       
+    }
+}
+.dedPhotoTwo{
+    display: none;
+}
+@media only screen and (max-width:1000px) {
+    .dedPhotoTwo{
+        display: block;
+        width: 455px;
+    }
+}
+@media only screen and (max-width:1000px) {
+    .dedPhotoThree{
+        display: none;
+    }
 }
 
 .textBacstahe{
@@ -267,7 +414,16 @@ margin-right: 87px;
     color: #333B41;
     margin-bottom: 20px;
 }
-
+@media only screen and (max-width:1000px) {
+    .backTopText{
+        margin-top: -9px;
+     font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    }
+}
 .backCenterText{
     height: 42px;
     font-family: 'Roboto';
@@ -299,7 +455,37 @@ font-size: 16px;
 line-height: 140%;
 color: #333B41;
 }
-
+@media only screen and (max-width:1000px) {
+    .backBottonText{
+        height: 132px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        
+        
+        
+    }
+}
+.backBottonTextTwo{
+    display: none;
+}
+@media only screen and (max-width:1000px) {
+    .backBottonTextTwo{
+        display: block;
+    height: 132px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+color: #333B41;
+    }
+    .backBottonTextOne{
+        display: none;
+    }
+}
 
 
 /*-------------------pets---------------------*/
@@ -309,12 +495,26 @@ color: #333B41;
     min-width: 1600px;
     
 }
-
+@media only screen and (max-width:1000px) {
+    .pets{
+        margin-top: 143px;
+        width: 100%;
+        min-width: auto;
+        width: 1000px;
+        margin-bottom: 39px;
+    }
+}
 .petsAllSlaid{
     position: relative;
     margin: 0 auto;
     width: 1600px;
    
+}
+@media only screen and (max-width:1000px) {
+    .petsAllSlaid{
+        width: 1000px;
+       
+    }
 }
 
 .petstSlaidTop{
@@ -323,6 +523,12 @@ color: #333B41;
     margin-bottom: 20px;
 }
 
+@media only screen and (max-width:1000px) {
+    .petstSlaidTop{
+        margin-bottom: 90px;
+       
+    }
+}
 .petLeftSlaidTop{
     position: relative;
     /* width: 366px; */
@@ -549,6 +755,9 @@ color: #000000;}
     
  }
 
+
+
+
 .iconAnimal{
     position: absolute;
     right: 12px;
@@ -597,7 +806,14 @@ margin-top: 80px;
 margin-bottom: 100px;
 margin-left: 651px;
 }
-
+@media only screen and (max-width:1000px) {
+    .pets{
+        margin-top: 143px;
+        width: 100%;
+        min-width: auto;
+        width: 1000px;
+    }
+}
 .buttChoesBottom :hover{
     background: #E47209; border-radius: 25px; 
 }
@@ -606,6 +822,23 @@ margin-left: 651px;
 }
 .buttChoesBottom a{
     text-decoration: none;
+}
+@media only screen and (max-width:1000px) {
+    .buttChoesBottom button{
+        margin-left: 351px;
+    }
+    .flowertop{
+        display: none;
+    }
+    .flowerleft img{
+       width: 386px;
+       height: 202px;
+      
+    }
+    .flowerright img{
+        width: 241px;
+        height: 180px;
+    }
 }
 /*----------------flower------------------*/
 .flowertop{
@@ -628,7 +861,7 @@ margin-left: 651px;
 
 .flowerbottom{
     position: absolute;
-    bottom: 0px;
+    bottom: -109px;
     right: 0px;
 }
 
@@ -636,6 +869,23 @@ margin-left: 651px;
     transition: 1s; 
    }
   
+   @media only screen and (max-width:1000px) {
+    .flowerleft {  
+    top: 2044px;
+    left: -63px;
+    }
+    .flowerright {
+        top: 2065px;
+    }
+    .flowerbottom img{
+width: 300px;
+height: 300px;
+    }
+    .flowerbottom {
+        bottom: -68px;
+        right: -57px;
+    }
+            }
 
 
 
@@ -650,12 +900,31 @@ opacity: 0.9;
 height: 1004px;
 display: block;
 }
+
+@media only screen and (max-width:1000px) {
+    .pick{
+        height: 876px;
+        width: 100%;
+        min-width: auto;
+        width: 1000px;
+        background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+opacity: 0.9;
+    }
+    .main{overflow: hidden;}
+    }
 .pickcontent{
    
     margin: 0 auto;
     width: 1600px;
     padding-top: 69px;
 } 
+@media only screen and (max-width:1000px) {
+    .pickcontent{
+        width: 1000px;  
+        height: 876px;
+        padding-top: 1px;
+    } 
+    }
 
 .pickrabot{
     width: 1160px;
@@ -669,6 +938,18 @@ backdrop-filter: blur(2px);
 height: 835px;
 border-radius: 20px;
 }
+@media only screen and (max-width:1000px) {
+    .pickrabot{
+        width: 940px;
+       margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 0px;
+        margin-bottom: 100px;
+        height: 796px;
+
+    }
+    }
+
 .pickText{
     display: block;
     
@@ -687,6 +968,13 @@ line-height: 120%;
 text-align: center;
 color: #FE9013;
 }
+@media only screen and (max-width:1000px) {
+    .pickText1{
+        padding-top: 29px;
+        margin-bottom: 21px;
+        }
+    }
+
 .pickText2{   
 
 height: 29px;
@@ -699,6 +987,12 @@ color: #333B41;
 margin-left: 99px;
 margin-bottom: 40px;
 }
+@media only screen and (max-width:1000px) {
+    .pickText2{
+        margin-left: 49px;
+        margin-bottom: 20px;
+        }
+    }
 .pickText3{ 
   
     height: 21px;
@@ -711,6 +1005,13 @@ margin-bottom: 40px;
     margin-left: 99px;
     margin-bottom: 10px;
 }
+@media only screen and (max-width:1000px) {
+    .pickText3{
+        margin-left: 49px;
+        width: 813px;
+        margin-bottom: 31px;
+        }
+    }
 .pickText4{
     margin-left: 99px;
   
@@ -724,6 +1025,18 @@ margin-bottom: 40px;
     margin-bottom: 60px;
        
 }
+@media only screen and (max-width:1000px) {
+    .pickText4{
+        margin-left: 49px;
+        width: 823px;
+        margin-bottom: 40px;
+        }
+    }
+    @media only screen and (max-width:1000px) {
+        .pickText4 br{
+            display: none;
+            }
+        }
 .pickText4 span{
     text-decoration:underline;
     -webkit-text-decoration-color:  #FE9013; /* safari still uses vendor prefix */
@@ -747,7 +1060,11 @@ margin-bottom: 40px;
     margin-bottom: 60px;
 }
 
-
+@media only screen and (max-width:1000px) {
+    .picImag{
+        margin-bottom: 69px;
+    }
+    }
 .pick2{
  width: 168px;
 height: 168px;
@@ -790,6 +1107,11 @@ color: #333B41;
     display: block;
    
 }
+@media only screen and (max-width:1000px) {
+    .oneSlaidPick{
+        margin-left: 88px;
+        }
+    }
 
 .pick1 {
     width: 168px;
@@ -836,6 +1158,12 @@ height: 54px;
 .picButt a{
     color:  #FFFFFF;
 }
+@media only screen and (max-width:1000px) {
+    .picButt {
+        margin-left: 321px;
+    }
+    }
+
 
 .picButt button:hover{
     background: #E47209; border-radius: 25px; }
@@ -872,14 +1200,40 @@ text-decoration-color:  #FE9013;;
     min-width: 1600px;
     margin: 0 auto;
 }
+@media only screen and (max-width:1000px) {
+    .testimonials{
+       
+        min-width: auto;
+        width: 1000px;
+    }
+    }
+
 .testimContent{
     width: 1600px;
     margin: 0 auto;
 }
+@media only screen and (max-width:1000px) {
+    .testimContent{
+        width: 1000px;
+      
+    }
+    .twoPerson{
+        display: none;
+    }
+    }
+  
 .testLogo{
     margin-top: 140px;
     margin-bottom: 47px;
 }
+@media only screen and (max-width:1000px) {
+    .testLogo{
+        margin-top: 101px;
+        margin-bottom: 31px;
+      
+    }
+    }
+    
 .anketTest{
     display: flex;
    justify-content: center;
@@ -898,6 +1252,7 @@ text-decoration-color:  #FE9013;;
     
     margin-right: 30px;
 }
+
     .perSon::before {
     content: "";
     position: absolute;
@@ -919,6 +1274,16 @@ text-decoration-color:  #FE9013;;
     border-radius: 20px;
     margin-right: 30px;
 }
+@media only screen and (max-width:1000px) {
+    .twoPerson{
+        margin-right: 0px;
+    }
+    }
+    @media only screen and (max-width:1000px) {
+        .onePerson{
+            margin-right: 31px;
+        }
+        }
 .threePerson{
     position: relative;
     width: 268px;
@@ -1017,6 +1382,16 @@ border-radius: 5px;
 margin-bottom: 32px;
 }
 
+@media only screen and (max-width:1000px) {
+    .polosaTest{
+        width: 382px;
+        height: 4px;
+    }
+    .polosa{
+        width: 65.19px;
+        height: 6px;
+    }
+    }
 .polosa:hover{
     background: #E47209; border-radius: 25px; 
 }
@@ -1054,6 +1429,13 @@ margin-bottom: 32px;
        margin-top: 32px;
        
 }
+@media only screen and (max-width:1000px) {
+    .buttTest button{
+        margin-left: 29px;
+    margin-top: 51px;
+    }
+   
+    }
 
 
 .buttTest button:hover{
@@ -1067,6 +1449,12 @@ margin-bottom: 32px;
 .buttTest button a{
     text-decoration: none;
 }
+@media only screen and (max-width:1000px) {
+    .buttTest {
+        padding-bottom: 140px;
+    }
+   
+    }
 
 
 /*------------foter-----------------*/
@@ -1080,10 +1468,26 @@ margin-bottom: 32px;
     padding-top: 40px;
     padding-bottom: 50px;
     }
-    .container{
+    @media only screen and (max-width:1000px) {
+        .footer {
+            width: 100%;
+            min-width: auto;
+            width: 1000px;
+           
+            }
+       
+        }
+    .container1{
         margin: 0 auto;
         width: 1160px;
     }
+    @media only screen and (max-width:1000px) {
+        .container1{
+           
+            width: 1000px;
+        }
+       
+        }
     
     .footer__logoinput {
     display: flex;
@@ -1108,7 +1512,12 @@ margin-bottom: 32px;
     
     color: #FFFFFF;
     }
-    
+    @media only screen and (max-width:1000px) {
+        .footer__logo{
+          margin-left: 29px;
+            }
+       
+        }
     .input {
     font-family: 'Roboto-Regular';
     font-style: normal;
@@ -1176,6 +1585,18 @@ margin-bottom: 32px;
     text-decoration: none;
     
     }
+    .radZam{
+        display: none;
+    }
+    @media only screen and (max-width:1000px) {
+        .input {
+            font-family: 'Roboto';
+
+width: 208px;
+margin-right: 12px;
+    height: 19px;
+}
+            }
     
     .footer__btn p {
         font-family: 'Roboto';
@@ -1196,7 +1617,14 @@ margin-bottom: 32px;
     padding: 16px 0px;
     width: 298px;
     }
-    
+    @media only screen and (max-width:1000px) {
+        .footer__btn p {
+            
+            margin-left: 30px;
+         }
+    }
+    .foot
+
     .footer__btn p:hover {
    background: #E47209; 
     border-radius: 5px;
@@ -1216,7 +1644,11 @@ margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     }
-    
+    @media only screen and (max-width:1000px) {
+        .footer__social {
+            margin-left: 31px;
+            }
+    }
     .footer__social a {
     text-decoration: none;
     
@@ -1256,7 +1688,27 @@ margin-bottom: 32px;
     .footer__twotext {
     margin-bottom: 12px;
     }
-    
+    @media only screen and (max-width:1000px) {
+        .f-input__btn {
+            margin-right: 39px;
+            }
+    }
+    @media only screen and (max-width:1000px) {
+        .footer__nav a {
+            margin-right: 0px;
+            margin-right: 52px;
+         
+                }
+                .footer__nav  {
+                    
+                    margin-left: 80px;
+                        }
+            }
+            @media only screen and (max-width:1000px) {
+                .threeFot{
+                    margin-right: 20px;
+        }
+                    }
     .designed {
         font-family: 'Roboto';
 font-style: normal;
@@ -1291,17 +1743,44 @@ color: #FFFFFF;
     top: 407px;
     left: 130px;
 }
+
+@media only screen and (max-width:1000px) {
+    .footer{
+        padding-bottom: 50px;
+}
+.footer__input-text{
+    margin-right: 19px;
+}
+        }
+@media only screen and (max-width:1000px) {
+    .leftArrr {
+        top: 369px;
+        left: 353px;
+        
+     }
+}
 .leftArrr2{
     position: absolute;
     top: 407px;
     right: 130px;
 }
 
+@media only screen and (max-width:1000px) {
+    .leftArrr2 {
+        top: 369px;
+        right: 352px;
+     }
+}
 .footer__social a:hover{
     background-color: #3c5244;
 }
 
-
+    @media only screen and (max-width:1000px) {
+        .footer__twotext {
+            margin-bottom: 10px;
+            margin-right: 31px;}
+            .footer__twotext p{
+               padding-bottom: 5px;}}
 .petLeftSlaidTop{position: relative;}
 
 .scale::before {
@@ -1333,11 +1812,26 @@ color: #FFFFFF;
         -webkit-transition: -webkit-transform .5s;
         transition: transform .5s;
     }
+    @media only screen and (max-width:1000px) {
+        .scale{
+            width: 294px;
+            height: 294px;
+           
+        }
+    }
+    
 
     .slaidJob {
         overflow: hidden;
         z-index: 100;
     }
+    @media only screen and (max-width:1000px) {
+        .slaidJob {
+          width: 294px;
+          height: 354px;
+        }
+    }
+    
 .iconAnimal{
     z-index: 10;
 }
@@ -1376,4 +1870,1046 @@ color: #FFFFFF;
 
 .footern a p:hover{
     background: #E47209; border-radius: 25px; 
+}
+
+
+.footer__logoOne{
+    display: none;
+}
+
+/* --------------------media 1000 px ---------------------------*/
+
+@media only screen and (max-width:1000px) {
+    .headconter{
+        min-width: 1000px;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:1000px) {
+    .main{
+        max-width: 1000px;
+        width: 1000px;
+    }
+}
+@media only screen and (max-width:1000px) {
+    .perSon{
+        width: 293px;
+      
+    }
+    }
+
+/*---------------media 640 --------------------------------*/
+
+/*------header-----------*/
+.burgerMen{
+    display: none;
+}
+.logoLittle{
+    display: none;
+}
+
+    @media only screen and (max-width:640px) {
+        .headconter {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 500;
+        }
+        .headconter{
+            min-width: auto;
+            width: 640px;
+
+        }
+        .radZam{
+            display: block;
+        }
+        .rad
+        .petText h1{
+            border: 0 solid;
+        }
+        .allHeader{
+    width: 640px;
+    height: 34px;
+        }
+        
+        .navigHead{
+            display: none;
+        }
+        .designedNav{
+            display: none;
+        }
+        .burgerMen{display: block;
+            width: 18px;
+            height: 10px;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+        .petText{
+            display: none;
+        }
+        .allHeader{
+            justify-content: space-between;
+        }
+        .petStory{display: none;
+        
+        align-items: center;
+        }
+        .logoLittle{display: block;
+        margin-left: 20px;}
+    }
+
+    /*----------------------------panda--------------------*/
+    @media only screen and (max-width: 640px){
+        .main{
+            width: 640px;
+            min-width: auto;
+        }
+    .watch {
+    width: 640px;
+    min-width: auto;
+    }
+    .watchContent {
+        background: url(/docskullka-JSFE2022Q3/online-zoo/assets/img--main/Giant\ Panda\ \(2\).jpg)no-repeat;
+        background-size: 100%;
+        max-width: 640px;
+    }
+    .wathJob {
+        overflow: hidden;
+        width: 640px;
+        height: 339px;
+    }
+    .circle {
+        width: 237.6px;
+        height: 237.6px;
+        right: 72px;
+        top: 8px;
+    }
+    .watchText{
+        width: 255.64px;
+        font-weight: 700;
+font-size: 54.2894px;
+line-height: 75%;
+right: 16px;
+    top: 46px;
+    }
+    .footer__logoinput {
+        
+        justify-content:start;
+      
+    }
+    .footer__twotext {
+        margin-bottom: 10px;
+        margin-right: 11px;
+    }
+    .watchButton{
+        width: 298px;
+height: 54px;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+text-align: center;
+text-transform: uppercase;
+right: 322px;
+    bottom: 42px; 
+    }
+
+}
+
+/*------------opisanie---------------*/
+
+.backBottonTextThree{
+    display: none;
+}
+@media only screen and (max-width: 640px){
+    .backstage {
+        width: 640px;
+        min-width: auto;
+    }
+    .backsContent {
+        margin-top: 106px;
+        width: 640px;
+        margin-top: 63px;
+        margin-left: 24px;
+    }
+    .dedPhotoTwo{
+        display: none;
+    }
+    .backTopText{
+        font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 120%;
+margin-bottom: 22px;
+    }
+    .backCenterText{
+        margin-bottom: 31px;
+    }
+    .backCenterTwoText{
+        color: #333B41;
+        margin-bottom: 18px;
+    }
+    .backBottonTextTwo{
+        display: none;
+    }
+    .backBottonTextThree{
+        display: block;
+        width: 495px;
+    }
+}
+
+/* ---------------slaid----------------------- */
+
+@media only screen and (max-width: 640px){
+.pets {
+    width: 100%;
+    min-width: auto;
+    width: 640px;
+    margin-top: 58px;
+} 
+.petsAllSlaid {
+    width: 640px;
+}
+
+.petRightSlaidTop{
+    display: none;
+}
+.petRightSlaidBottom{
+    display: none;
+}
+.scale {
+    Width:283px;
+Height:285px;
+}
+.textJob h1{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+}
+.slaidJob p{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 15px;
+line-height: 120%;
+}
+.slaidJob{
+    width: 284px;
+    height: 332px;
+}
+.petCenterSlaidTop{
+    margin-right: 0px;
+}
+.petCenterSlaidBottom{
+    margin-right: 0px;
+}
+.leftArrr2 {
+    top: 343px;
+    right: 243px;}
+    .leftArrr {
+        top: 343px;
+        left: 243px;}
+    .buttChoesBottom button {
+        margin-left: 171px;
+        margin-top: 64px;
+        margin-bottom: 60px;
+    }
+    .petstSlaidTop{
+        margin-bottom: 85px;
+    }
+
+}
+
+/* -------------pick----------------- */
+.ara1{
+    display: none;
+}
+.ara2{
+    display: none;
+}
+
+@media only screen and (max-width: 640px){
+.pick {
+    min-width: auto;
+    width: 640px;
+    height: 781px;
+}
+.pickcontent {
+    width: 640px;
+    height: 781px;
+    padding-top: 1px;
+}
+.pickrabot {
+    width: 640px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 741px;
+    margin-left: 0px;
+}
+.oneSlaidPick{
+    margin: 0;
+}
+.twooSlaidPick{
+    margin: 0;
+}
+.threeSlaidPick{
+    margin: 0;
+}
+
+.pickText3 {
+    margin-left: 0px;
+    width: 600px;
+    margin-bottom: 31px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 130%;
+margin-left: 19px;
+}
+.pickText4 {
+    margin-left: 0px;
+    width: 600px;
+    margin-bottom: 40px;
+    margin-left: 19px;
+    margin-bottom: 31px;
+}
+.imgArrow{
+    display: none;
+}
+.pickText{
+    width: 640px;
+}
+.pickText1 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 42px;
+line-height: 120%;
+padding-top: 9px;
+margin-bottom: 12px;
+}
+.pickText2{
+    margin-left: 19px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 120%;
+margin-bottom: 44px;
+
+}
+.pick1 img{
+    padding-top: 55px;
+    padding-left: 32px;}
+
+.pick2 img{
+    padding-top: 39px;
+    padding-left: 39px;
+}
+.pick3 img{
+    padding-top: 48px;
+    padding-left: 20px;
+}
+.pick2{
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.textPick{
+    margin-top: 30px;
+    margin-left: 31px;
+}
+.pick1{
+    margin-left: 18px;
+    margin-top: -23px;
+}
+.pick2{
+    margin-top: -23px;
+}
+.pick3{
+    margin-left: 8px;
+    margin-top: -23px;
+}
+.text3{
+    margin-left: 9px;
+}
+
+
+.picImag{
+    margin-bottom: 41px;
+}
+.picButt{
+    margin-left: 172px;
+}
+.flowerleft {
+    top: 1609px;
+    left: -122px;
+}
+.flowerright img {
+    width: 227px;
+    height: 163px;
+}
+.flowerright {
+    top: 1649px;
+    right: -10px;
+}
+.flowertop{
+    display: block;
+    z-index: 200;
+    top: 322px;
+    right: -10px;
+}
+.flowertop img{
+    width: 150px;
+    height: 476px;
+}
+.picImag{
+    position: relative;
+}
+.ara1{
+    display: block;
+    position: absolute;
+    top: -38px;
+    left: 157px;
+}
+.ara2{
+    display: block;
+    position: absolute;
+    top: -39px;
+    left: 365px;
+}
+}
+/* -----------------test------------------ */
+
+@media only screen and (max-width: 640px){
+.testimonials {
+    min-width: auto;
+    width: 640px;
+}
+.testimContent {
+    width: 640px;
+}
+.anketTest {
+    display: block;
+    
+}
+.perSon{
+    width: 600px;
+    height: 109px;
+    margin-left: 23px;
+    /* overflow: hidden; */
+    
+
+}
+.opisanePerson{
+    height: 50px;
+    width: 565px;
+   
+    
+}
+.testLogo {
+    margin-top: 61px;
+}
+.onePerson{
+    margin-bottom: 15px;
+}
+.onePerson{
+    margin-bottom: 15px;
+}
+.topAncet{
+    padding-top: 4px;
+}
+.threePerson{
+    margin-bottom: 15px;
+}
+.buttTest button{
+    margin-left: 200px;
+    margin-top: 11px;
+    width: 240px;
+height: 54px;
+
+
+/* orange */
+
+background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+border-radius: 5px;
+}
+.flowerbottom img{
+    width: 225px;
+    height: 228px;
+}
+.flowerbottom {
+    bottom: -79px;
+    right: -57px;
+}
+.buttTest {
+    padding-bottom: 80px;
+}
+
+}
+
+/* ----------foter---------------- */
+.footer{
+    position: relative;
+}
+.setiSoc{
+    display: none;
+}
+
+@media only screen and (max-width: 640px){
+.container1 {
+    width: 640px;
+}
+
+.footer {
+    min-width: auto;
+    width: 640px;
+    overflow: hidden;
+    padding: 0px;
+}
+.f-input__btn{
+    display: none;
+}
+.f-input__title{
+    display: none;
+}
+.footer__logoinput {
+    padding-top: 13px;
+    margin-bottom: 30px;
+}
+.footer__logo {
+    margin-left: 21px;
+}
+.footer__btn p {
+    margin-left: 20px;
+}
+.footer__social{
+    display: none;
+}
+.footer{height: 282px;}
+
+.footer__btn p {
+    margin-left: 20px;
+    margin-bottom: 69px;
+}
+.footer__nav {
+    margin-left: 23px;
+}
+.setiSoc{
+    display: block;
+    position: absolute;
+    top: 0;
+    top: 12px;
+    right: 18px;
+}
+.setiSoc img{
+    margin-bottom: 20px;
+}
+
+}
+
+/* ----------320  media ------------------- */
+.watchButtonDubl{
+    display: none;
+}
+
+@media only screen and (max-width:320px) {
+    .headconter {
+        min-width: auto;
+        width: 320px;
+    }
+    .allHeader {
+        width: 320px;
+        height: 34px ;
+    }
+    .logoLittle {
+        display: block;
+        margin-left: 10px;
+        margin-top: 2px;
+    }
+    .burgerMen {
+        display: block;
+        width: 18px;
+        height: 10px;
+        margin-top: 12px;
+        margin-right: 10px;
+    }
+/* ------------ main ------------*/
+.main {
+    width: 320px;
+    min-width: auto;
+}
+.watch {
+    width: 320px;
+    min-width: auto;
+}
+.watchContent {
+    background: url(/docskullka-JSFE2022Q3/online-zoo/assets/img--main/Giant\ Panda\ \(3\).jpg)no-repeat;
+    background-size: 100%;
+    max-width: 320px;
+}
+.wathJob {
+    overflow: hidden;
+    width: 320px;
+    height: 186px;
+}
+.circle {
+    width: 119.09px;
+height: 119.09px;;
+right: 38px;
+top: 22px;
+}
+.watchText {
+    width: 128px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 75%;
+right: 12px;
+top: 41px;
+}
+.watchButton {
+    width: 298px;
+    height: 54px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    right: 322px;
+    bottom: 42px;
+}
+/* ------------back------------- */
+.backstage {
+    width: 320px;
+    min-width: auto;
+}
+.backsContent {
+    margin-top: 106px;
+    width: 320px;
+    margin-top: 63px;
+    margin-left: 24px;
+}
+.backTopText {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+width: 300px;
+margin-top: 43px;
+    margin-left: -14px;
+    margin-bottom: 10px;
+}
+.watchButton{
+    display: none;
+}
+.watchButtonDubl{
+    display: block;
+    width: 298px;
+    height: 54px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    right: 11px;
+ 
+    top: 207px;
+
+}
+.backCenterText {
+    margin-bottom: 41px;
+    width: 297px;
+    margin-left: -11px;
+}
+.backCenterTwoText {
+    margin-left: -11px;
+    margin-bottom: 9px;
+}
+.backBottonTextThree {
+    margin-left: -13px;
+    width: 300px;
+    height: 198px;
+}
+/* ---------------pets----------------- */
+.pets {
+    width: 100%;
+    min-width: auto;
+    width: 320px;
+   
+    margin-top: 40px;
+
+}
+.petsAllSlaid {
+    width: 320px;
+}
+.leftArrr {
+    display: none;
+}
+.leftArrr2 {
+    display: none;
+
+}
+.petstSlaidTop {
+    margin-left: 16px;
+   display: block;
+}
+.petsSlaidBottom {
+   display: block;
+   margin-left: 16px;
+    
+}
+.petCenterSlaidTop {
+    margin-top: 17px;
+    margin-right: 0px;
+    margin-left: 1px;
+}
+.textJob h1 {
+    margin-top: 4px;
+    margin-left: 11px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 140%;
+}
+.slaidJob p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 120%;
+}
+.petstSlaidTop {
+    margin-bottom: 19px;
+}
+
+.slaidJob {
+    margin-top: 18px;
+    margin-left: 1px;
+    width: 284px;
+    height: 332px;
+}
+.buttChoesBottom button {
+    margin-left: 10px;
+    margin-top: 17px;
+    margin-bottom: 60px;
+}
+/* ----------pick---------------- */
+
+.pick {
+    min-width: auto;
+    width: 320px;
+    height:  1082px;
+}
+.pickcontent {
+    width: 320px;
+    height: 1042px;
+    padding-top: 1px;
+}
+.pickText1 {
+    width: 232px;
+height: 29px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+}
+.pickText2 {
+    height: 66px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    width: 297px;
+}
+
+.pickText3 {
+   display: none;
+}
+
+.pickText4 {
+    display: none;
+ }
+ .pickText5 {
+    width: 139px;
+    height: 29px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+
+
+color: #333B41;
+
+}
+.picImag {
+    display: block;
+}
+
+.pickrabot {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1042px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.buttChoesBottom button {
+    margin-left: 10px;
+    margin-top: 17px;
+    margin-bottom: 21px;
+}
+.pickText1 {
+    
+    padding-top: 22px;
+    margin-bottom: 11px;
+    margin-left: 33px;
+}
+.pickText2 {
+    height: 66px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    width: 297px;
+    text-align: center;
+    margin-bottom: 16px;
+    margin-left: 0px;
+}
+.pickText5 {
+    width: 139px;
+    height: 29px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+    margin-left: 82px;
+}
+.pick1 {
+    margin-left: 65px;
+    margin-top: -23px;
+}
+.text1 {
+    margin-top: 13px;
+    margin-left: 67px;
+}
+.pick2 {
+    margin-top: 20px;
+}
+.pick2 {
+    margin-left: 67px;
+    margin-right: 32px;
+}
+.textPick {
+    margin-top: 8px;
+    margin-left: 68px;
+}
+.pick3 {
+    margin-left: 66px;
+    margin-top: 31px;
+}
+.ara1 {
+    display: block;
+    position: absolute;
+    top: 193px;
+    left: 204px;
+    transform: rotate(82deg);
+}
+.ara2 {
+    display: block;
+    position: absolute;
+    top: 442px;
+    transform: rotate(82deg);
+    left: 205px;
+}
+.picButt {
+    margin-left: -1px;
+}
+/* --------------------ter---------------- */
+.testimonials {
+    min-width: auto;
+    width: 320px;
+}
+
+.testimContent {
+    width: 320px;
+}
+.perSon{
+    width:299px;
+}
+.testLogo {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 120%;
+/* identical to box height, or 29px */
+
+ margin-top: 30px;
+ margin-bottom: 4px;
+text-align: center
+}
+.perSon {
+    width: 299px;
+    height: 109px;
+    margin-left: 14px;
+    /* overflow: hidden; */
+}
+.polosaTest{
+    display: none;
+}
+.buttTest button{
+    margin-left: 43px;
+}
+
+.anketTest {
+ 
+    margin-bottom: 26px;
+}
+.opisanePerson {
+    height: 50px;
+    width: 280px;
+}
+
+.footer {
+    min-width: auto;
+    width: 320px;
+    overflow: hidden;
+    padding: 0px;
+    height: 334px;
+}
+.container1 {
+    width: 320px;
+}
+.footer__logoOne{
+    display: block;
+}
+.footer__logo{
+    display: none;
+}
+
+.setiSoc{
+    display: flex  ;
+   
+}
+.setiSoc img {
+  
+    padding-right: 30px;
+}
+.buttTest {
+    padding-bottom: 63px;
+}
+
+.setiSoc {
+    position: absolute;
+    top: 71px;
+    right: 34px;
+}
+.footer__logoOne {
+  
+    margin-top: 8px;
+    margin-left: 94px;
+}
+
+.footer__logoinput {
+    padding-top: 13px;
+    margin-bottom: 88px;
+}
+.footer__btn p {
+    margin-left: 10px;
+    margin-bottom: 69px;
+}
+.footer__twotext {
+    position: absolute;
+    left: 88px;
+    margin-bottom: -13px;
+    margin-right: 0;
+}
+
+.footer__nav{
+    display: flex;
+}
+.footer__nav {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 22px;
+}
+.footer__nav a {
+    margin-right: 0px;
+    margin-right: 34px;
+}
+.flowertop img {
+    width: 55px;
+    height: 148px;
+}
+.flowertop {
+    display: block;
+    z-index: 200;
+    top: 254px;
+    right: -10px;
+}
+.flowerleft {
+    top: 2000px;
+    left: -122px;
+}
+.flowerright {
+    top: 2000px;
+    right: -10px;
+}
+.flowerleft {
+    top: 2171px;
+    left: -132px;
+}
+.flowerleft img {
+    width: 337px;
+    height: 70px;
+}
+.flowerright img {
+    width: 86px;
+    height: 413px;
+} 
+.flowerbottom img {
+    width: 161px;
+    height: 116px;
+}
+.flowerbottom {
+    bottom: -47px;
+    right: -51px;
+}
+.picButt {
+    margin-left: 2px;
+}
+}
+.footer__logo{
+    margin-right: 679px;
+}
+
+@media only screen and (max-width: 1000px){
+    .footer__logo{
+        margin-right: 458px;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1599px)  {
+    .main{
+        min-width: 1600px
+    }
+ 
 }
