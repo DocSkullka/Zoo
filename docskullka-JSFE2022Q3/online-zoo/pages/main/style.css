@@ -493,7 +493,6 @@ color: #333B41;
     margin-top: 180px;
     width: 100%;
     min-width: 1600px;
-    
 }
 @media only screen and (max-width:1000px) {
     .pets{
@@ -505,6 +504,10 @@ color: #333B41;
     }
 }
 .petsAllSlaid{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     margin: 0 auto;
     width: 1600px;
@@ -531,7 +534,7 @@ color: #333B41;
 }
 .petLeftSlaidTop{
     position: relative;
-    /* width: 366px; */
+    width: 366px;
     height: 426px;
     border-radius: 5px;
     border: solid 1px #F9804B;
@@ -607,6 +610,8 @@ img{
 }
 
 .petRightSlaidTop{
+    width: 366px;
+    height: 426px;
     position: relative;
     border-radius: 5px;
     border: solid 1px #F9804B;
@@ -640,12 +645,13 @@ color: #000000;
     color: #000000;
 }
 .petsSlaidBottom{
-    
     display: flex;
     justify-content: center;
 }
 
 .petLeftSlaidBottom{
+    width: 366px;
+    height: 426px;
     position: relative;
     border-radius: 5px;
     border: solid 1px #F9804B;}
@@ -675,6 +681,7 @@ color: #000000;}
     color: #000000;}
 
 .petCenterSlaidBottom{
+    width: 366px;
     height: 426px;
     position: relative;
     border-radius: 5px;
@@ -707,6 +714,8 @@ color: #000000;}
     color: #000000;}
 
 .petRightSlaidBottom{
+    width: 366px;
+    height: 426px;
     position: relative;
     border-radius: 5px;
     border: solid 1px #F9804B;}
@@ -789,13 +798,15 @@ left: 22px;
     transform: rotate(-180deg);
 }
 
+
+
+
 .buttChoesBottom button{
  font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 140%;
-text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
 width: 298px;
@@ -804,7 +815,6 @@ background: #FE9013;
 border-radius: 25px;
 margin-top: 80px;
 margin-bottom: 100px;
-margin-left: 651px;
 }
 @media only screen and (max-width:1000px) {
     .pets{
@@ -824,9 +834,6 @@ margin-left: 651px;
     text-decoration: none;
 }
 @media only screen and (max-width:1000px) {
-    .buttChoesBottom button{
-        margin-left: 351px;
-    }
     .flowertop{
         display: none;
     }
@@ -1911,6 +1918,9 @@ color: #FFFFFF;
 }
 
     @media only screen and (max-width:640px) {
+        .iconAnimal {
+            bottom: 5px;
+        }
         .headconter {
             position: fixed;
             top: 0;
@@ -2116,7 +2126,6 @@ line-height: 120%;
         top: 343px;
         left: 243px;}
     .buttChoesBottom button {
-        margin-left: 171px;
         margin-top: 64px;
         margin-bottom: 60px;
     }
@@ -2599,7 +2608,6 @@ line-height: 140%;
     height: 332px;
 }
 .buttChoesBottom button {
-    margin-left: 10px;
     margin-top: 17px;
     margin-bottom: 60px;
 }
@@ -2669,7 +2677,6 @@ color: #333B41;
     margin-right: 10px;
 }
 .buttChoesBottom button {
-    margin-left: 10px;
     margin-top: 17px;
     margin-bottom: 21px;
 }
@@ -2905,6 +2912,7 @@ text-align: center
     .footer__logo{
         margin-right: 458px;
     }
+
 }
 
 @media (min-width: 1001px) and (max-width: 1599px)  {
@@ -2913,3 +2921,123 @@ text-align: center
     }
  
 }
+
+
+.slideWrapper {
+    width: 1167px;
+    overflow: hidden;
+}
+
+.slidePlace {
+    position: relative;
+    display: flex;
+    left: -1263px;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .slidePlace {
+        left: -938px;
+    }
+}
+
+
+@media only screen and (max-width: 640px){
+    .slidePlace {
+        left: -420px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 320px){
+    .slidePlace {
+        left: 20px;
+    }
+    
+}
+
+
+.transitionLeft {
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+
+
+
+.transitionRight {
+    animation-name: slideRight;
+    animation-duration: 2s;
+}
+
+
+#itemCenter {
+    margin: 0px 100px;
+}
+
+
+@media only screen and (min-width: 1001px){
+
+    @keyframes slideRight {
+        0% {
+            left: -1263px;
+        }
+        100%{
+            left: -2526px
+        }
+    }
+
+    @keyframes slideLeft {
+        0% {
+            left: -1263px;
+        }
+        100%{
+            left: 0px
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1000px){
+
+    @keyframes slideRight {
+        0% {
+            left: -940px;
+        }
+        100%{
+            left: -1986px
+        }
+    }
+
+    @keyframes slideLeft {
+        0% {
+            left: -940px;
+        }
+        100%{
+            left: 111px
+        }
+    }
+}
+
+
+@media only screen and (max-width: 640px){
+
+    @keyframes slideRight {
+        0% {
+            left: -420px;
+        }
+        100%{
+            left: -1122px
+        }
+    }
+
+    @keyframes slideLeft {
+        0% {
+            left: -420px;
+        }
+        100%{
+            left: 283px
+        }
+    }
+}
+

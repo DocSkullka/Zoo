@@ -92,6 +92,101 @@ slaid.addEventListener("mouseout", function() {
 });
 
 
+// Slide.....
+
+const sliderLine = document.querySelector('.slidePlace');
+const leftArrow = document.querySelector('.leftArrr');
+const rightArrow = document.querySelector('.leftArrr2');
+const leftItem = document.querySelector('#itemLeft').innerHTML
+const rightItem = document.querySelector('#itemRight').innerHTML
+
+const one = document.querySelector('#left1').innerHTML
+const two = document.querySelector('#left2').innerHTML
+const three = document.querySelector('#left3').innerHTML
+const four = document.querySelector('#left4').innerHTML
+const five = document.querySelector('#left5').innerHTML
+const six = document.querySelector('#left6').innerHTML
+
+let arrayOneSix = [one, two, three, four, five, six]
+
+function shuffle(arrayForSlots) {
+  let currentIndex = arrayForSlots.length,  randomIndex;
+
+  while (currentIndex != 0) {
+
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+    [arrayForSlots[currentIndex], arrayForSlots[randomIndex]] = [
+      arrayForSlots[randomIndex], arrayForSlots[currentIndex]];
+  }
+
+  return arrayForSlots;
+}
+
+const funcLeft = function() {
+  sliderLine.classList.add('transitionLeft')
+
+  shuffle(arrayOneSix)
+
+  document.querySelector('#left1').innerHTML = arrayOneSix[0]
+  document.querySelector('#left2').innerHTML = arrayOneSix[1]
+  document.querySelector('#left3').innerHTML = arrayOneSix[2]
+  document.querySelector('#left4').innerHTML = arrayOneSix[3]
+  document.querySelector('#left5').innerHTML = arrayOneSix[4]
+  document.querySelector('#left6').innerHTML = arrayOneSix[5]
+  leftArrow.removeEventListener('click', funcLeft)
+  rightArrow.removeEventListener('click', funcRight)
+
+}
+
+const funcRight = function() {
+  sliderLine.classList.add('transitionRight')
+
+  shuffle(arrayOneSix)
+
+  document.querySelector('#right1').innerHTML = arrayOneSix[0]
+  document.querySelector('#right2').innerHTML = arrayOneSix[1]
+  document.querySelector('#right3').innerHTML = arrayOneSix[2]
+  document.querySelector('#right4').innerHTML = arrayOneSix[3]
+  document.querySelector('#right5').innerHTML = arrayOneSix[4]
+  document.querySelector('#right6').innerHTML = arrayOneSix[5]
+  rightArrow.removeEventListener('click', funcRight)
+  leftArrow.removeEventListener('click', funcLeft)
+
+}
+
+leftArrow.addEventListener('click', funcLeft)
+
+
+rightArrow.addEventListener('click', funcRight)
+
+
+sliderLine.addEventListener('animationend', function(animationEvent){
+  if(animationEvent.animationName === 'slideLeft') {
+    sliderLine.classList.remove('transitionLeft')
+    document.querySelector('#center1').innerHTML = document.querySelector('#left1').innerHTML
+    document.querySelector('#center2').innerHTML = document.querySelector('#left2').innerHTML
+    document.querySelector('#center3').innerHTML = document.querySelector('#left3').innerHTML
+    document.querySelector('#center4').innerHTML = document.querySelector('#left4').innerHTML
+    document.querySelector('#center5').innerHTML = document.querySelector('#left5').innerHTML
+    document.querySelector('#center6').innerHTML = document.querySelector('#left6').innerHTML 
+  } else {
+    document.querySelector('#center1').innerHTML = document.querySelector('#right1').innerHTML
+    document.querySelector('#center2').innerHTML = document.querySelector('#right2').innerHTML
+    document.querySelector('#center3').innerHTML = document.querySelector('#right3').innerHTML
+    document.querySelector('#center4').innerHTML = document.querySelector('#right4').innerHTML
+    document.querySelector('#center5').innerHTML = document.querySelector('#right5').innerHTML
+    document.querySelector('#center6').innerHTML = document.querySelector('#right6').innerHTML
+
+    sliderLine.classList.remove('transitionRight')
+  }
+  leftArrow.addEventListener('click', funcLeft)
+  rightArrow.addEventListener('click', funcRight)
+})
+
+
+
+
 
 
 
