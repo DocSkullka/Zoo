@@ -1,3 +1,34 @@
+let FirstP = document.querySelectorAll(".onePerson");
+let SlideLine = document.querySelector(".anketTest");
+let count = 0;
+let width = SlideLine.offsetWidth;
+let widthElem = width / FirstP.length / width;
+let stepRange = [];
+let inputDistance = document.querySelector(".testimonialsScroll");
+let maxStep = +inputDistance.getAttribute("max");
+let reLocation = [];
+for (let i = 0; i <= maxStep; i++) {
+  stepRange.push(i);
+  reLocation.push(Math.round(i * widthElem * 10000) / 100);
+}
+let currentValue;
+function changeLocation(value) {
+  let findIndex = stepRange.indexOf(+value);
+  return SlideLine.style.transform = `translateX(-${reLocation[findIndex]}%)`;
+}
+inputDistance.addEventListener("input", function () {
+  currentValue = inputDistance.value;
+  changeLocation(currentValue);
+});
+
+
+
+
+
+
+
+
+
 var element = document.querySelector(".nameArr");
 element.addEventListener("click", function() {
     element.classList.add("active");
@@ -185,7 +216,214 @@ sliderLine.addEventListener('animationend', function(animationEvent){
 })
 
 
+var burg = document.querySelector(".burgerMen");
+var opburg = document.querySelector(".opBurgMen");
+var burgX = document.querySelector(".burgX");
+var main = document.querySelector(".main");
 
+burg.addEventListener("click", function () {
+  opburg.classList.add("_active");
+  document.body.classList.add("_lock");
+});
+
+burgX.addEventListener("click", function () {
+  opburg.classList.remove("_active");
+  document.body.classList.remove("_lock");
+});
+
+main.addEventListener("click", function () {
+  opburg.classList.remove("_active");
+  document.body.classList.remove("_lock");
+});
+
+// =============================================================imgOpen============================================================================================
+var person = document.querySelector(".onePerson");
+var person2 = document.querySelector(".twoPerson");
+var person3 = document.querySelector(".threePerson");
+var person4 = document.querySelector(".fourPerson");
+var com = document.querySelector(".comBlock");
+var comx = document.querySelector(".comX");
+
+person.addEventListener("click", function () {
+  com.classList.add("_active");
+  return commetns1()
+});
+comx.addEventListener("click", function () {
+  com.classList.remove("_active");
+});
+
+person2.addEventListener("click", function () {
+  com.classList.add("_active");
+  return commetns2()
+});
+comx.addEventListener("click", function () {
+  com.classList.remove("_active");
+});
+
+person3.addEventListener("click", function () {
+  com.classList.add("_active");
+  // const nu = 3;
+  return commetns3();
+});
+comx.addEventListener("click", function () {
+  com.classList.remove("_active");
+});
+
+person4.addEventListener("click", function () {
+  com.classList.add("_active");
+  return commetns4()
+});
+comx.addEventListener("click", function () {
+  com.classList.remove("_active");
+});
+
+async function commetns1() {
+  const com = "com.json";
+  const res = await fetch(com);
+  const data = await res.json();
+  document.querySelector(".comText").textContent = data[0].text;
+  document.querySelector(".comName").textContent = data[0].nameT;
+  document.querySelector(".comWhere").textContent = data[0].where;
+  // document.querySelector(".comImg") = data.img `/clou2dy-JSFE2022Q3/online-zoo/ONLINE-ZOO/assets/icons/icon--main/onPeson.svg`;
+}
+// commetns1();
+
+async function commetns2() {
+  const com = "com.json";
+  const res = await fetch(com);
+  const data = await res.json();
+  document.querySelector(".comText").textContent = data[2].text;
+  document.querySelector(".comName").textContent = data[1].nameT;
+  document.querySelector(".comWhere").textContent = data[2].where;
+document.querySelector(".comImg") = data.img `/clou2dy-JSFE2022Q3/online-zoo/ONLINE-ZOO/assets/icons/icon--main/onPeson.svg`;
+}
+// commetns2();
+async function commetns3() {
+  const com = "com.json";
+  const res = await fetch(com);
+  const data = await res.json();
+  document.querySelector(".comText").textContent = data[3].text;
+  document.querySelector(".comName").textContent = data[2].nameT;
+  document.querySelector(".comWhere").textContent = data[3].where;
+  // document.querySelector(".comImg") = data.img `/clou2dy-JSFE2022Q3/online-zoo/ONLINE-ZOO/assets/icons/icon--main/onPeson.svg`;
+}
+// commetns3();
+async function commetns4() {
+  const com = "com.json";
+  const res = await fetch(com);
+  const data = await res.json();
+  document.querySelector(".comText").textContent = data[4].text;
+  document.querySelector(".comName").textContent = data[3].nameT;
+  document.querySelector(".comWhere").textContent = data[4].where;
+  // document.querySelector(".comImg") = data.img `/clou2dy-JSFE2022Q3/online-zoo/ONLINE-ZOO/assets/icons/icon--main/onPeson.svg`;
+}
+// commetns4();
+
+/*==================================================================Donate Alert=============================================================================================== */
+
+var burg = document.querySelector(".burgerMen");
+var opburg = document.querySelector(".opBurgMen");
+var burgX = document.querySelector(".burgX");
+var main = document.querySelector(".main");
+burg.addEventListener("click", function () {
+  opburg.classList.add("_active");
+  document.body.classList.add("_lock");
+});
+
+burgX.addEventListener("click", function () {
+  opburg.classList.remove("_active");
+  document.body.classList.remove("_lock");
+});
+
+main.addEventListener("click", function () {
+  opburg.classList.remove("_active");
+  document.body.classList.remove("_lock");
+});
+
+
+// =============================================================imgOpen============================================================================================
+var person = document.querySelector(".onePerson");
+var person2 = document.querySelector(".twoPerson");
+var person3 = document.querySelector(".threePerson");
+var person4 = document.querySelector(".fourPerson");
+var com = document.querySelector(".comBlock");
+var comx = document.querySelector(".comX");
+
+person.addEventListener("click", function () {
+  com.classList.add("_active");
+  return commetns1()
+});
+comx.addEventListener("click", function () {
+  com.classList.remove("_active");
+});
+
+person2.addEventListener("click", function () {
+  com.classList.add("_active");
+  return commetns2()
+});
+comx.addEventListener("click", function () {
+  com.classList.remove("_active");
+});
+
+person3.addEventListener("click", function () {
+  com.classList.add("_active");
+  return commetns3();
+});
+comx.addEventListener("click", function () {
+  com.classList.remove("_active");
+});
+
+person4.addEventListener("click", function () {
+  com.classList.add("_active");
+  return commetns4()
+});
+comx.addEventListener("click", function () {
+  com.classList.remove("_active");
+});
+
+async function commetns1() {
+  const com = "com.json";
+  const res = await fetch(com);
+  const data = await res.json();
+  document.querySelector(".comText").textContent = data[0].text;
+  document.querySelector(".comName").textContent = data[0].nameT;
+  document.querySelector(".comWhere").textContent = data[0].where;
+  // document.querySelector(".comImg") = data.img `/clou2dy-JSFE2022Q3/online-zoo/ONLINE-ZOO/assets/icons/icon--main/onPeson.svg`;
+}
+// commetns1();
+
+async function commetns2() {
+  const com = "com.json";
+  const res = await fetch(com);
+  const data = await res.json();
+  document.querySelector(".comText").textContent = data[2].text;
+  document.querySelector(".comName").textContent = data[1].nameT;
+  document.querySelector(".comWhere").textContent = data[2].where;
+document.querySelector(".comImg") = data.img `/clou2dy-JSFE2022Q3/online-zoo/ONLINE-ZOO/assets/icons/icon--main/onPeson.svg`;
+}
+// commetns2();
+async function commetns3() {
+  const com = "com.json";
+  const res = await fetch(com);
+  const data = await res.json();
+  document.querySelector(".comText").textContent = data[3].text;
+  document.querySelector(".comName").textContent = data[2].nameT;
+  document.querySelector(".comWhere").textContent = data[3].where;
+  // document.querySelector(".comImg") = data.img `/clou2dy-JSFE2022Q3/online-zoo/ONLINE-ZOO/assets/icons/icon--main/onPeson.svg`;
+}
+// commetns3();
+async function commetns4() {
+  const com = "com.json";
+  const res = await fetch(com);
+  const data = await res.json();
+  document.querySelector(".comText").textContent = data[4].text;
+  document.querySelector(".comName").textContent = data[3].nameT;
+  document.querySelector(".comWhere").textContent = data[4].where;
+  // document.querySelector(".comImg") = data.img `/clou2dy-JSFE2022Q3/online-zoo/ONLINE-ZOO/assets/icons/icon--main/onPeson.svg`;
+}
+
+
+// Testimonials range
 
 
 

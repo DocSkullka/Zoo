@@ -10,7 +10,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   }
   html { height: 101%; } /* always display scrollbars */
   body { font-size: 62.5%; line-height: 1; font-family: Arial, Tahoma, Verdana, sans-serif; }
-  
+  body._lock{
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
   article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
   ol, ul { list-style: none; }
   
@@ -1007,7 +1010,6 @@ color: #FFFFFF;
      .custom-radio {
         margin-right: 50px;
      }
-     
      .custom-radio input {
         display: none;
       }
@@ -1223,6 +1225,11 @@ color: #FFFFFF;
     }
     .burgerMen{
         display: none;
+    }
+    .opBurgMen{
+        left: -100%;
+        position: fixed;
+    
     }
     .panda1000{
         display: none;
@@ -1846,6 +1853,65 @@ color: #FFFFFF;
 }
 
     @media only screen and (max-width:640px) {
+        .burgerMen{display: block;
+            width: 18px;
+            height: 10px;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+        .burgX{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .burgBor{
+            border: 0.8px solid #fe9013;
+            border-radius: 2px;
+            width: 65.6px;
+            height: 41.6px;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .burgPet{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15.2116px;
+            line-height: 120%;
+            text-align: center;
+            color:#fe9013;
+            width: 58px;
+            height: 36px;
+            margin: 2.84px 3.8px;
+        }
+        .opBurgMen{
+            width: 640px;
+            height: 329px;
+            background: #e5e5e5;
+            transition: left 0.3s ease 0s;
+            z-index: 3;
+        }
+        .opBurgMen._active{
+            left: 0;
+            transition: left 0.3s ease 0s;
+        }
+        .burgUl{
+            margin-top: 34px;
+        }
+        .burgLi{
+            margin-left: 10px;
+            margin-bottom: 15px;
+            width: 114px;
+            height: 22px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+        }
+        .burgLi a {
+            color: #333B41;
+        }
         .headconter {
             position: fixed;
             top: 0;
@@ -2023,9 +2089,9 @@ line-height: 120%;
         left: 33px;
         z-index: 79;
     }
-    .mn6{
+    /* .mn6{
         display: none;
-    }
+    } */
     .mn6Dubl{
         display: block;
     }
@@ -2043,9 +2109,9 @@ line-height: 120%;
         display: block;
     }
 
-.radOne{
+/* .radOne{
     display: none;
-}
+} */
 .inputBot {
     width: 268px;
     margin-bottom: 9px;
@@ -2186,6 +2252,34 @@ line-height: 120%;
         height: 10px;
         margin-top: 12px;
         margin-right: 10px;
+    }
+    .opBurgMen{
+        width: 320px;
+        height: 329px;
+        background: #e5e5e5;
+        transition: left 0.3s ease 0s;
+        z-index: 3;
+    }
+    .opBurgMen._active{
+        left: 0;
+        transition: left 0.3s ease 0s;
+    }
+    .burgUl{
+        margin-top: 34px;
+    }
+    .burgLi{
+        margin-left: 10px;
+        margin-bottom: 15px;
+        width: 114px;
+        height: 22px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .burgLi a {
+        color: #333B41;
     }
 
     /*-----------main------------------*/
@@ -2642,11 +2736,16 @@ color: #333B41;
 
 
 
-/* .radOsn{
-    display: block;
-} */
-
-
 .allRadio{
     z-index: 500;
 }
+
+.placBot input{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+}
+
+

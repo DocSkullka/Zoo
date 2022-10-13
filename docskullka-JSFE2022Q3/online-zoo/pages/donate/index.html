@@ -32,6 +32,21 @@
               </nav>
               <div class="designedNav"><a target="_blank" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by ©</a></div>
               <div class="burgerMen"><a href="##"><img src="/docskullka-JSFE2022Q3/online-zoo/assets/icons/icon--donate/burger_menu.svg" alt="logo"></a></div>
+              <div class="opBurgMen">
+                <div class="burgX"> <a href="#"> <img src="/docskullka-JSFE2022Q3/online-zoo/assets/icons/icon--main/x_icon (1).svg" alt="crest"></a></div>
+                <div class="burgBor">    
+                    <h3 class="burgPet"><a href="/docskullka-JSFE2022Q3/online-zoo/pages/main/index.html">PetStory online</a></h3>
+                    <!-- <div class="imgPet"><img src="/docskullka-JSFE2022Q3/online-zoo/assets/icons/icon--main/bamboo.svg" alt="bambo"></div> -->
+                  </div>
+                <ul class="burgUl">
+                    <li class="burgLi"><a class="litOne" href="/docskullka-JSFE2022Q3/online-zoo/pages/main/index.html">About</a></li>
+                    <li class="burgLi"><a href="#">Map</a> </li>
+                    <li class="burgLi"><a href="##">Zoos</a> </li>
+                    <li class="burgLi"><a href="#">Donate</a> </li>
+                    <li class="burgLi"><a href="#">Contact us</a> </li>
+                    <li class="burgLi"><a target="_blank" href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by ©</a></li>
+                </ul>
+            </div>
           </div>
       </div>
   </header>
@@ -75,12 +90,12 @@
               <div class="allRadio">
                 <li><input class="radioPick rad" id="rad1" type="radio" name="rb" > </li>
                 <li><input class="radioPick rad"  id="rad2" type="radio" name="rb"></li>
-                <li><input class="radioPick radOsn rad" id="rad3" type="radio" checked name="rb" ></li>
+                <li><input class="radioPick radOsn rad" id="rad3" type="radio" name="rb" ></li>
                 <li><input class="radioPick  radZam rad" id="rad3" type="radio"  name="rb" ></li>
                 <li><input class="radioPick rad" id="rad4"type="radio"  name="rb" ></li>
                 <li><input class="radioPick rad" id="rad5"type="radio" name="rb" ></li>
-                <li><input class="radioPick rad radDubl"id="rad9" type="radio" checked name="rb" ></li>
-                <li><input class="radioPick rad radOne"id="rad6" type="radio" name="rb" ></li>
+                <!-- <li><input class="radioPick rad radDubl"id="rad9" type="radio"  name="rb" ></li> -->
+                <li><input class="radioPick rad radOne"id="rad6" type="radio" checked  name="rb" ></li>
                 <li><input class="radioPick rad"id="rad7" type="radio" name="rb" ></li>
                 <li><input class="radioPick "id="rad8" type="radio" name="rb" ></li>
               </div>
@@ -92,14 +107,14 @@
               <div class="money mn3" id="money3">$1000</div>
               <div class="money mn4" id="money4">$500</div>
               <div class="money mn5" id="money5">$250</div>
-              <div class="money mn6 mn6Dubl activeCh " id="money9">$100</div>
-              <div class="money mn6 mn6Osn " id="money6">$100</div>
+              <!-- <div class="money mn6 mn6Dubl activeCh " id="money9">$100</div> -->
+              <div class="money mn6 mn6Osn  activeCh" id="money6">$100</div>
               <div class="money mn7" id="money7">$50</div>
               <div class="money mn8" id="money8">$25</div>
             </div>
             
             <div class="placBot">
-              <input class="inputBot" type="number" max="9999" placeholder="Another amount">
+              <input class="inputBot" value="100" type="number" name="textT" id="textT" max="9999" onchange="changeQ(this)"  onKeyPress="if(this.value.length==4) return false;" placeholder="Another amount">
               <label for="optS" style=" position: absolute;
               left: 245px;
               top: 14px;"><img src="/docskullka-JSFE2022Q3/online-zoo/assets/icons/icon--donate/Vector (6).svg" alt="qqqq"></label>
