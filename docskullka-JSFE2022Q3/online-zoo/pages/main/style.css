@@ -210,13 +210,13 @@ text-fill-color: transparent;
     }
 }
 .watchContent{
-    background: url(../../assets/img--main/Giant\ Panda.jpg)no-repeat ;
+    background: url(../../assets/img--main/Giant\%20Panda.jpg)no-repeat ;
     background-size: 100%;
     
 }
 @media only screen and (max-width:1000px) {
     .watchContent{
-        background: url(../../assets/img--main/Giant\ Panda\ \(1\).jpg)no-repeat ;
+        background: url(../../assets/img--main/Giant\%20Panda\ \(1\).jpg)no-repeat ;
         background-size: 100%;
         width: 1000px;
     }
