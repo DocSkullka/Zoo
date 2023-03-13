@@ -210,13 +210,13 @@ text-fill-color: transparent;
     }
 }
 .watchContent{
-    background: url(/docskullka-JSFE2022Q3/online-zoo/assets/img--main/Giant\ Panda.jpg)no-repeat ;
+    background: url(../../assets/img--main/Giant\ Panda.jpg)no-repeat ;
     background-size: 100%;
     
 }
 @media only screen and (max-width:1000px) {
     .watchContent{
-        background: url(/docskullka-JSFE2022Q3/online-zoo/assets/img--main/Giant\ Panda\ \(1\).jpg)no-repeat ;
+        background: url(../../assets/img--main/Giant\ Panda\ \(1\).jpg)no-repeat ;
         background-size: 100%;
         width: 1000px;
     }
@@ -2194,7 +2194,7 @@ color: #FFFFFF;
     min-width: auto;
     }
     .watchContent {
-        background: url(/docskullka-JSFE2022Q3/online-zoo/assets/img--main/Giant\ Panda\ \(2\).jpg)no-repeat;
+        background: url(../../assets/img--main/Giant\ Panda\ \(2\).jpg)no-repeat;
         background-size: 100%;
         max-width: 640px;
     }
@@ -2522,7 +2522,6 @@ margin-bottom: 44px;
     width: 640px;
 }
 .anketTest {
-    padding-top: ;
     display: block;
     
 }
@@ -2708,7 +2707,7 @@ border-radius: 5px;
     min-width: auto;
 }
 .watchContent {
-    background: url(/docskullka-JSFE2022Q3/online-zoo/assets/img--main/Giant\ Panda\ \(3\).jpg)no-repeat;
+    background: url(../../assets/img--main/Giant\ Panda\ \(3\).jpg)no-repeat;
     background-size: 100%;
     max-width: 320px;
 }
