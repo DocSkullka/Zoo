@@ -373,7 +373,7 @@ text-decoration: none;
         visibility: visible;
         cursor: pointer;
         user-select: none;
-        background: url(/docskullka-JSFE2022Q3/online-zoo/assets/icons/icon--donate/roller_icon.svg);
+        background: url(../../assets/icons/icon--donate/roller_icon.svg);
     }
 
  
@@ -683,7 +683,7 @@ input{
         visibility: visible;
         cursor: pointer;
         user-select: none;
-        background: url(/docskullka-JSFE2022Q3/online-zoo/assets/icons/icon--donate/roller_icon.svg);
+        background: url(../../assets/icons/icon--donate/roller_icon.svg);
     }
  
 
@@ -2591,7 +2591,7 @@ color: #333B41;
     visibility: visible;
     cursor: pointer;
     user-select: none;
-    background: url(/docskullka-JSFE2022Q3/online-zoo/assets/img-donate/roller_icon\ \(1\).svg);
+    background: url(../../assets/img-donate/roller_icon\ \(1\).svg);
 }
 
 .lastText {
